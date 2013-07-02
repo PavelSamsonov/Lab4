@@ -16,7 +16,7 @@ int proc_read(char* buffer, char** buffer_location, off_t offset,
 	char op, *end;
 
 	number = (int) data;
-	printk(KERN_INFO MODULE_PREFIX "Reading /proc/%s\n", names[number - 1]);
+	printk(KERN_INFO MODULE_PREFIX "Rading /proc/%s\n", names[number - 1]);
 
 	if (offset > 0) {
 		return 0;
@@ -25,7 +25,7 @@ int proc_read(char* buffer, char** buffer_location, off_t offset,
 	if (number == 4) {
 		a = simple_strtol(procfs_buffer[0], &end, 10);
 		if (a == 0 && (*end == procfs_buffer[0][0])) {
-			return sprintf(buffer, "%s", "First operand is not integer.");
+			return sprintf(buffer, "%s", "First operand is nt integer.");
 		}
 
 		b = simple_strtol(procfs_buffer[1], &end, 10);
