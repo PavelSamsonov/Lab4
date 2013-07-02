@@ -22,7 +22,7 @@
 #define ACCESS_TOKEN 0644
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Aifonofa, Dmitrach, Pavlovsky, Pozdnyakov");
+MODULE_AUTHOR("Samsonov");
 #define MODULE_PREFIX "[CALC_PROC] "
 
 int proc_read(char*, char**, off_t, int, int*, void*);
